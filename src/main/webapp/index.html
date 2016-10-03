@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>Samle Calculator</title>
+Arun Dixit
+<body>
+Enter number 1 :<input type="number" id="num1" required autofocus>
+Enter number 2 :<input type="number" id="num2" required>
+<input type="button" value="Add" onclick="Addition()">
+The result is : <p id="result"> </p>
+<script>
+function Addition()
+{
+var n1=document.getElementById("num1").value;
+var n2=document.getElementById("num2").value;
+var result= +n1 + +n2;
+alert("The sum is " +result);
+documnet.getElementById("result").innerText=result;
+}
+</script>
+</body>
+</html>
